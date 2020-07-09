@@ -6,7 +6,7 @@ const results = document.querySelector('#result');
 const wins = document.querySelector('#win-tally');
 const losses = document.querySelector('#loss-tally');
 const draws = document.querySelector('#draw-tally');
-
+const resetButton = document.querySelector('#reset-button');
 
 
 
@@ -46,4 +46,16 @@ playButton.addEventListener('click', () => {
         draws.textContent = 'You have bored me ' + drawsData + ' times.';
 
     }
-}); 
+});
+
+resetButton.addEventListener('click', () => {
+    winsData = 0;
+    lossData = 0;
+    drawsData = 0;
+
+    results.textContent = '';
+    wins.textContent = '';
+    losses.textContent = '';
+    draws.textContent = '';
+    console.log(winsData, lossData, drawsData);
+});

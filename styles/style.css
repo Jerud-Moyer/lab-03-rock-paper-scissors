@@ -27,6 +27,10 @@ body {
     border-style: double;
     display: flex;
     justify-content: center;
+    overflow: scroll;
+    align-items: baseline;
+    padding: 20px;
+    
 }
 
 main {
@@ -34,12 +38,12 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
     border: solid black 20px;
     border-radius: 15px;
     border-style: double;
     background-color: orange;
     padding: 10px;
+    height: 100%;
 }
 
 input  {
@@ -64,15 +68,21 @@ button {
     cursor: pointer;
 }
 
+label {
+    margin: 20px;
+}
+
 .name {
     font-size: xxx-large;
     font-family: 'Bangers', cursive;
-    margin-top: 20px;
+    margin: 20px;
+    align-items: flex-start;
 }
 
 .rules {
     font-size: xx-large;
     font-family: 'Bangers', cursive;
+    margin: 20px;
 }
 input:checked + img {
     border: solid black 5px;
@@ -81,6 +91,7 @@ input:checked + img {
 
 input + img {
     cursor: pointer;
+    margin: 20px;
 }
 
 
@@ -91,4 +102,16 @@ input + img {
     font-size: larger;
     font-weight: bolder;
     margin-bottom: 20px;
+}
+
+#image-wrapper {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#user-interface {
+    margin: 20px;
 }
