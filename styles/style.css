@@ -32,7 +32,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 20px;
     border: solid black 20px;
@@ -64,6 +64,13 @@ button {
     cursor: pointer;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 .name {
     font-size: xxx-large;
     font-family: 'Bangers', cursive;
@@ -73,6 +80,8 @@ button {
 .rules {
     font-size: xx-large;
     font-family: 'Bangers', cursive;
+    align-items: center;
+    margin: 20px;
 }
 input:checked + img {
     border: solid black 5px;
