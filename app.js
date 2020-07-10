@@ -7,7 +7,7 @@ const results = document.querySelector('#result');
 const wins = document.querySelector('#win-tally');
 const losses = document.querySelector('#loss-tally');
 const draws = document.querySelector('#draw-tally');
-const resetButton = document.querySelector('#reset-button');
+
 
 
 
@@ -59,7 +59,7 @@ resetButton.addEventListener('click', () => {
     losses.textContent = null;
     draws.textContent = null;
     results.textContent = null;
-    playButton.textContent = 'Go ahead \'n try!'
+    playButton.textContent = 'Go ahead \'n try!';
 
 
 });
