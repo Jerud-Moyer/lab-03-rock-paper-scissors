@@ -14,10 +14,11 @@
 </head>
 
 <body>
-    <header>
+     <header>
        
-    </header>
+    </header> 
     <main>
+
         <header>
             <div class="name"> Rockin' Paper Scissors! </div>
             <div class="rules">You Know the Rules</div>
@@ -25,24 +26,26 @@
         <section>
             <label>
                 
+
+        <div class="name"> Rockin' Paper Scissors! </div>
+        <div class="rules">You Know the Rules</div>
+        <section id="image-wrapper">
+            <label> 
+
                 <input type="radio" name="gesture" value="rock" checked/>
                 <img src="./images/hand-in-rock-sign-vector-13935937.jpg"/>
-
             </label>
 
             <label>
-                 
                 <input type="radio" name="gesture" value="paper"/>
                 <img src="./images/hand-3.jpg"/>
-
             </label>
 
-            <label>
-                
+            <label>    
                 <input type="radio" name="gesture" value="scissors"/>
                 <img src="./images/7e7f7a915da37bbdbf67e199ab6e6e6a.jpg"/>
-
             </label>
+v
             
         </section>
         <section class="feedback">
@@ -52,12 +55,20 @@
                 <div id="loss-tally"></div>
                 <div id="draw-tally"></div>
                 <button id="reset-button">Reset</button>
+
         </section>
-
-
- 
-    </main>
-    <script type="module" src="app.js"></script>
+        <div id="user-interface">
+            <button id="play-button">Go ahead 'n try!</button>
+            <section class="feedback">
+                <span id="result"></span>
+                <div id="win-tally"></div>
+                <div id="loss-tally"></div>
+                <div id="draw-tally"></div>
+            </section>
+            <button id="reset-button">Reset?</button>
+        </div>
+    </main> 
+    <script type="module" src="app.js"></script> 
 </body>
 
 </html>
