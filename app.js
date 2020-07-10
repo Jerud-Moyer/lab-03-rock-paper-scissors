@@ -2,6 +2,7 @@
 import { getRandomThrow } from './rpsUtils.js';
 import { checkResult } from './rpsUtils.js';
 const playButton = document.querySelector('#play-button');
+const resetButton = document.querySelector('#reset-button');
 const results = document.querySelector('#result');
 const wins = document.querySelector('#win-tally');
 const losses = document.querySelector('#loss-tally');
@@ -32,19 +33,20 @@ playButton.addEventListener('click', () => {
         winsData ++;
         results.textContent = ('You have WON!');
         wins.textContent = 'you have ' + winsData + ' wins!';
+        playButton.textContent = 'Try again!';
         
     }
     if (result === 'loss') {
         lossData ++;
         results.textContent = 'You LOSE!';
         losses.textContent = 'You have ' + lossData + ' losses. wah wah';
-
+        playButton.textContent = 'Try again!';
     }
     if (result === 'draw') {
         drawsData ++;
         results.textContent = 'It looks like a draw, how boring';
         draws.textContent = 'You have bored me ' + drawsData + ' times.';
-
+        playButton.textContent = 'Try again';
     }
 });
 
@@ -53,9 +55,11 @@ resetButton.addEventListener('click', () => {
     lossData = 0;
     drawsData = 0;
 
-    results.textContent = '';
-    wins.textContent = '';
-    losses.textContent = '';
-    draws.textContent = '';
-    console.log(winsData, lossData, drawsData);
+    wins.textContent = null;
+    losses.textContent = null;
+    draws.textContent = null;
+    results.textContent = null;
+    playButton.textContent = 'Go ahead \'n try!'
+
+
 });
